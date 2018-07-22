@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<title>Book CRUD App</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top row text-center">
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a href="#GetBooks" class="nav-link">Get all books</a>
+			</li>
+			<li class="nav-item">
+				<a href="#GetBook" class="nav-link">Get a single book</a>
+			</li>
+			<li class="nav-item">
+				<a href="#deleteBook" class="nav-link">Delete a book</a>
+			</li>
+			<li class="nav-item">
+				<a href="#addNewBook" class="nav-link">Add a new book</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link">Update a book</a>
+			</li>
+		</ul>
+	</nav>
+
+	<div id="allBooks" class="bg-light">
+		<button class="btn-info" id="GetBooks">Get all the books</button>
+	</div>
+	<hr>
+
+	
+	<!--<button id="GetBook"> Get first book</button>-->
+	<div id="oneBook" class="bg-light">
+		<input type="text" placeholder="Book Isbn" id="bookNumberGet"><br>
+		<button class="btn-info" id="GetBook">Get a certain book</button>
+	</div>
+	<hr>
+	
+	<div id="deletion" class="bg-light">
+		<input type="text" placeholder="Book Isbn" id="bookNumberDelete"><br>
+		<button class="btn-info" id="deleteBook">Delete a certain book</button>
+	</div>
+	<hr>
+	
+	<div class="bg-light">
+			<div class="form-inline">	
+					<input placeholder="Lastname" type="text" name="authorLastName" id="addLastName">
+					<input placeholder="Firstname" type="text" name="authorFirstName" id="addFirstName">
+					<input placeholder="Book Title" 	type="text" name="title" id="addTitle">
+					<input placeholder="Isbn Number" 	type="text" name="isbn" id="addIsbn">
+			</div>
+			<button class="btn-info" id="addNewBook">Add a new book</button>
+	</div>
+	<hr>
+	
+			
+	<div class="bg-light">
+		
+			<div class="form-inline">
+				<input placeholder="Lastname" type="text" id="authorLastNamePut">
+				<input placeholder="Firstname" type="text" id="authorFirstNamePut">
+				<input placeholder="Book Title" type="text" id="titlePut">
+				<input placeholder="Isbn Number" type="text" id="isbnPut">
+			</div>
+			
+			<button class="btn-info" id="updateBook">Update a book</button>
+
+			
+	</div>	
+
+	<!--</form>--><br><hr><br>
+
+
+
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="interact.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 	crossorigin="anonymous"></script>
+</body>
+</html>
